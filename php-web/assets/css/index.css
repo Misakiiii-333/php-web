@@ -1,0 +1,248 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #5F524F;
+    padding: 20px;
+}
+
+header {
+    display: grid;
+    height: 100px;
+    grid-template-columns: 20% 50% 30%;
+    justify-content: center;
+    align-content: center;
+}
+
+header div:first-child {
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.slogan {
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding-top: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+.slogan::before, .slogan::after {
+  content: "§";
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  opacity: 0.2;
+  margin: 0 0.5em;
+  font-size: 1em;
+}
+
+input {
+    font-family: Poppins-Medium;
+    color: #666666;
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 0 30px 0 30px;
+}
+
+#form {
+    text-align: right;
+}
+
+#form ul {
+    list-style: none;
+}
+
+#form ul li {
+    display: inline-block;
+    padding: 0 15px;
+    color: #fff;
+    letter-spacing: 1px;    
+}
+
+#form li span {  /*guestの文字に反映*/
+    font-weight: 800;
+    color: greenyellow;
+}
+
+
+#form a {
+    color: #fff;
+}
+
+/* make login form */
+
+#login {
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 30px 0;
+    /*after finish all, set display: none to hide it. */ 
+    display: none; 
+    width: 350px;
+    top: 30px;
+    right: 20px;
+}
+
+#login input {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    background: #e6e6e6;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#login button {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 68%;
+    height: 50px;
+    border-radius: 30px; /*login bottonの形*/
+    background: rgb(40, 227, 118);
+    margin-right: 50px;
+    margin-top: 20px;
+    border: none;
+}
+/*botton をmouseあてた時の変化*/
+#login button:hover { 
+    background: #497443;
+}
+
+/*remember user nameの所 */
+#login label  { 
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-left: 100px;
+}
+
+#login label input {
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    left: -20px;
+}
+#search {
+    position: relative;
+    margin-top: 30px;
+}
+
+#search i {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    color: green;
+}
+
+/* nav …　A section for providing navigation links 
+to other parts of the current document or to other documents  */
+    
+nav {
+    border: 1px solid #ccc;       
+}
+
+nav ul { 
+    /* allow centering to work  */
+    display: table; 
+    margin: 0 auto;
+}
+
+nav ul li {
+    display: inline-block;
+    height: 30px;
+    padding: 30px;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 75% auto;
+    grid-column-gap: 10px;
+    min-height: 500px;
+}
+
+#main-content, #sidebar {
+    padding: 10px 10px;
+    border: 1px solid;
+}
+/* side bar */
+
+#sidebar ul li {
+    padding: 10px 0;
+}
+
+/* main content table */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th { 
+    border: 1px solid lightgrey;
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even) { /*HTML テーブルの偶数行*/
+    background-color:lightgrey;
+}
+
+.table-scroll { 
+    overflow-x : auto
+}
+
+/* footer */
+footer {
+    display: grid;
+    grid-template-columns: auto 75%;
+}
+
+/* scroll */
+#scroll {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: rgba(2, 129, 1, 0.85);
+    text-align: center;        
+}
+
+#scroll a { color: #fff; }
+#scroll i { margin-top: 8px; }
+
+/*register.phpをうけて*/
+.form-register {
+    margin: 5px;
+}
+
+.form-register label {
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.form-register input {
+    line-height: 30px;
+    height: 30px;
+    border: #ccc 1px solid;
+    margin: 0px;
+    padding: 0px 5px;
+    width: 300px;
+}
